@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora CLT vs. PJ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculadora de Encargos e Impostos</h1>
+        <p>Compare os descontos de um funcionário CLT com os impostos de um PJ.</p>
+
+        <div id="seletor-modo">
+            <button id="btn-modo-clt" class="btn-modo active">Calcular para CLT</button>
+            <button id="btn-modo-pj" class="btn-modo">Calcular para PJ</button>
+        </div>
+
+        <div id="form-clt">
+            <h2>Cálculo CLT</h2>
+            <div class="form-group">
+                <label for="salario-bruto">Salário Bruto Mensal:</label>
+                <input type="number" id="salario-bruto" placeholder="Ex: 4000.00">
+            </div>
+            <div class="form-group">
+                <label for="num-dependentes">Número de Dependentes:</label>
+                <input type="number" id="num-dependentes" value="0" min="0">
+            </div>
+            <button id="calcular-clt" class="btn-calcular">Calcular CLT</button>
+        </div>
+
+        <div id="form-pj" style="display: none;">
+            <h2>Cálculo PJ</h2>
+            <div class="form-group">
+                <label for="regime-pj">Selecione o Regime:</label>
+                <select id="regime-pj">
+                    <option value="simples">Simples Nacional (Simplificado)</option>
+                    <option value="presumido">Lucro Presumido (Simplificado)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="faturamento-bruto">Faturamento Bruto Mensal:</label>
+                <input type="number" id="faturamento-bruto" placeholder="Ex: 10000.00">
+            </div>
+            <button id="calcular-pj" class="btn-calcular">Calcular PJ</button>
+        </div>
+
+        <div id="relatorio">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

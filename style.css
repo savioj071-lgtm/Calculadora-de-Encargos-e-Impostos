@@ -1,0 +1,142 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #212529;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: #007bff;
+    margin-top: 30px;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 5px;
+}
+
+#seletor-modo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.btn-modo {
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: 2px solid #007bff;
+    background-color: #f8f9fa;
+    color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-modo:hover {
+    background-color: #e2e6ea;
+}
+
+.btn-modo.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #495057;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-calcular {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-calcular:hover {
+    background-color: #218838;
+}
+
+#relatorio {
+    margin-top: 30px;
+    background: #fdfdfd;
+    border: 1px dashed #ced4da;
+    border-radius: 5px;
+    padding: 0 20px 20px 20px;
+}
+
+#relatorio h3 {
+    color: #0056b3;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+#relatorio p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#relatorio p span {
+    font-weight: 500;
+}
+
+.text-danger {
+    color: #c92a2a;
+}
+
+.text-success {
+    color: #218838;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.total-liquido {
+    font-size: 1.3rem !important;
+    font-weight: bold !important;
+    margin-top: 15px !important;
+    padding-top: 15px !important;
+    border-top: 2px solid #007bff;
+}
